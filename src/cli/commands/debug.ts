@@ -17,15 +17,17 @@ export const debug = async () => {
             file: path.join("..", "..", "package.json"),
         });
 
+        console.log("jahskdjhaksjdhkajshd");
+
         Logger.log("sb-mig version: ");
         Logger.success(fileContent["version"]);
         Logger.log(" ");
         Logger.log("Version used: ");
         Logger.success(
-            `storyblok-js-client: ${fileContent["dependencies"]["storyblok-js-client"]}`
+            `storyblok-js-client: ${fileContent["dependencies"]["storyblok-js-client"]}`,
         );
         Logger.success(
-            `typescript: ${fileContent["dependencies"]["typescript"]}`
+            `typescript: ${fileContent["dependencies"]["typescript"]}`,
         );
         Logger.log(" ");
         Logger.log(" ");
